@@ -1,0 +1,39 @@
+{
+  "name": "play-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "proxy": "https://localhost:3000/",
+  "scripts": {
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbriechle/Play-FE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danbriechle/Play-FE/issues"
+  },
+  "homepage": "https://github.com/danbriechle/Play-FE#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.3.1",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "css-loader": "^2.1.1",
+    "mocha": "^6.0.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
