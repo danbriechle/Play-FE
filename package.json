@@ -37,5 +37,8 @@
     "surge": "^0.20.3",
     "webpack": "^4.29.6",
     "webpack-dev-server": "^3.2.1"
-  }
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain turing-play-music.surge.sh" } }
 }
