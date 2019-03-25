@@ -11,3 +11,5 @@ APIkey.js
 
 # logs
 *.log
+
+/config

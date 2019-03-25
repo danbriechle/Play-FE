@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     main: "./lib/index.js",
-    test: "./test/index.spec.js"
+    test: "./test/index-test.js"
   },
   output: {
     path: __dirname,
@@ -17,5 +17,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.json', '.css', '.scss']
-  }
+  },
+  node: {
+   fs: "empty"
+}
 };
