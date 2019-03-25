@@ -25,6 +25,7 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
+    "figaro-js": "^1.3.3",
     "jquery": "^3.3.1",
     "webpack-cli": "^3.3.0"
   },
@@ -40,5 +41,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain turing-play-music.surge.sh" } }
+      "pre-push": "surge --project ./ --domain turing-play-music.surge.sh"
+    }
+  }
 }
