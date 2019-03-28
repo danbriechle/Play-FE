@@ -2,24 +2,62 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous"> -->
+    <title>Play Music Search</title>
   </head>
   <body>
 
-  <h1>Hello World!</h1>
+  <section class="header">
+    <h1>Play Music Search</h1>
+  </section>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
   <section class="search">
     <div class="container">
-      <h2>Search Artist:</h2>
-      <input type="text" id="search_field" placeholder="Search by artist">
-      <button id="search-btn">Search</button>
+      <br/>
+    	<div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <form class="card card-sm">
+            <div class="card-body row no-gutters align-items-center">
+
+              <div class="col-auto">
+                <i class="fas fa-search h4 text-body"></i>
+              </div>
+
+              <div class="col">
+                <input id="search_field" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search artists here...">
+              </div>
+
+              <div class="col-auto">
+                <button id="search-btn" class="btn btn-lg btn-success" type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
+  <div class="top_buttons">
+    <button id="playlists-btn" class="btn btn-lg btn-success" type="text">Playlists</button>
+    <button id="favorites-btn" class="btn btn-lg btn-success" type="text">Favorites</button>
+  </div>
+
   <section id="search_results">
+    <h2>Search Results:</h2>
   </section>
 
   <section id="all_favorites">
+    <h2>Favorites:</h2>
+  </section>
+
+  <section id="all_playlists">
+    <button id="playlist_create" class="btn btn-lg btn-success" type="text">Create Playlist</button>
+    <h2>Playlists:</h2>
   </section>
 
     <script
@@ -27,5 +65,8 @@
     </script>
 
     <script src="main.bundle.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+
   </body>
 </html>
